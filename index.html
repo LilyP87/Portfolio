@@ -1,81 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ---------------------------------- UNICONS ------------------------------------- -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ---------------------------------- SWIPER CSS --------------------------------- -->
-    <link rel="stylesheet" href="">
-    <!-- --------------------------------------- CSS ---------------------------------------- -->
-    <link rel="stylesheet" href="">
+        <!-- ---------------------------------- UNICONS ------------------------------------- -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <!-- ---------------------------------- SWIPER CSS --------------------------------- -->
+        <link rel="stylesheet" href="">
+        <!-- --------------------------------------- CSS ---------------------------------------- -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Responsive Portfolio Website</title>
-</head>
-<body>
+        <title>Responsive Portfolio Website</title>
+    </head>
+
+    <body>
         <!-- ---------------------------------- HEADER ------------------------------------- -->
         <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Alexa</a>
 
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!-- ---------------------------------- MAIN ------------------------------------- -->
         <main class="main">
-                <!-- ------------------------------- HOME -------------------------------- -->
-                <section class="home-section" id="home">
+            <!-- ------------------------------- HOME -------------------------------- -->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://dribbble.com" target="_blank" class="home__social-icon">
+                                <i class="uil uil-dribbble"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path fill="#8A3FFC"
+                                        d="M35.8,-46.9C50.7,-38.4,70.2,-33.8,76.7,-22.8C83.3,-11.8,76.9,5.6,71,22.9C65.2,40.3,59.9,57.7,48.1,70.5C36.4,83.3,18.2,91.5,3.3,86.9C-11.5,82.3,-23,64.9,-33,51.5C-43,38.1,-51.4,28.8,-58.3,16.8C-65.1,4.8,-70.4,-9.9,-67.5,-23C-64.7,-36.1,-53.8,-47.6,-41.2,-56.9C-28.6,-66.1,-14.3,-73.2,-1.9,-70.5C10.4,-67.8,20.8,-55.4,35.8,-46.9Z"
+                                        transform="translate(100 100)" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path fill="#8A3FFC"
+                                        d="M35.8,-46.9C50.7,-38.4,70.2,-33.8,76.7,-22.8C83.3,-11.8,76.9,5.6,71,22.9C65.2,40.3,59.9,57.7,48.1,70.5C36.4,83.3,18.2,91.5,3.3,86.9C-11.5,82.3,-23,64.9,-33,51.5C-43,38.1,-51.4,28.8,-58.3,16.8C-65.1,4.8,-70.4,-9.9,-67.5,-23C-64.7,-36.1,-53.8,-47.6,-41.2,-56.9C-28.6,-66.1,-14.3,-73.2,-1.9,-70.5C10.4,-67.8,20.8,-55.4,35.8,-46.9Z"
+                                        transform="translate(100 100)" />
+                                    <image class="home__blob-img" x="20" y="28"
+                                        xlink:href="assets/img/Simself_portrait.png">
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'am Alexa</h1>
+                            <h3 class="home__subtitle">Frontend developper</h3>
+                            <p class="home__description">
+                                High level experience in web design and development knowledge, producting quality work.
+                            </p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scrool-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ----------------------------- ABOUT ---------------------------------- -->
+            <section class="about-section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/Simself_portrait.png" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">
+                            Web developer, with extensive knowledge and years of experience, working in web technologies
+                            and UI / UX design, delivering quality work.
+                        </p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">08+</span>
+                                <span class="about__info-name">Years <br> experience</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">20+</span>
+                                <span class="about__info-name">Completed <br> project</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">05+</span>
+                                <span class="about__info-name">Companies <br> worked</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/CV_AureliePavilla.pdf" class="button button--flex">
+                                Dowload CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ----------------------------- SKILLS ----------------------------------- -->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills_container container grid">
+                    <div>
+                        <!-- ---------------- SKILLS 1 -------------------- -->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Frontend developer</h1>
+                                    <span class="skills__subtitle">More than 4 years</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__number">80%</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__css"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">JavasScript</h3>
+                                            <span class="skills__number">60%</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__js"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__number">85%</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__react"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---------------- SKILLS 2 -------------------- -->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-server-network skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Backend developer</h1>
+                                    <span class="skills__subtitle">More than 2 years</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php"></span>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Node JS</h3>
+                                            <span class="skills__number">70%</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__node"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__number">90%</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__firebase"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__number">55%</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__python"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ---------------- SKILLS 3 -------------------- -->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-swatchbook skills__icon" ></i>
+
+                                <div>
+                                    <h1 class="skills__title">Designer</h1>
+                                    <span class="skills__subtitle">More than 5 years</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Figma</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__figma"></span>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Sketch</h3>
+                                            <span class="skills__number">85%</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__sketch"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Photoshop</h3>
+                                            <span class="skills__number">85%</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__photoshop"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     
-                </section>
 
-                <!-- ----------------------------- ABOUT ---------------------------------- -->
-                <section class="about-section" id="about">
 
-                </section>
 
-                <!-- ----------------------------- SKILLS ----------------------------------- -->
-                <section class="skills-section" id="skills">
+                    </div>
+            </section>
 
-                </section>
+            <!-- ----------------------- QUALIFICATION ----------------------------- -->
+            <section class="qualification section">
 
-                <!-- ----------------------- QUALIFICATION ----------------------------- -->
-                <section class="qualification-section">
+            </section>
 
-                </section>
+            <!-- -------------------------- SERVICES ---------------------------------- -->
+            <section class="services section" id="services">
 
-                <!-- -------------------------- SERVICES ---------------------------------- -->
-                <section class="services-section" id="services">
+            </section>
 
-                </section>
+            <!-- ------------------------- PORTFOLIO --------------------------------- -->
+            <section class="portfolio section" id="portfolio">
 
-                <!-- ------------------------- PORTFOLIO --------------------------------- -->
-                <section class="portfolio-section" id="portfolio">
+            </section>
 
-                </section>
+            <!-- -------------------- PROJECT IN MIND ----------------------------- -->
+            <section class="project section">
 
-                <!-- -------------------- PROJECT IN MIND ----------------------------- -->
-                <section class="project-section">
+            </section>
 
-                </section>
+            <!-- ------------------------- TESTIMONIAL ------------------------------ -->
+            <section class="testimonial section">
 
-                <!-- ------------------------- TESTIMONIAL ------------------------------ -->
-                <section class="testimonial-section">
+            </section>
 
-                </section>
+            <!-- ---------------------------- CONTACT ME --------------------------- -->
+            <section class="contact section" id="contact">
 
-                <!-- ---------------------------- CONTACT ME --------------------------- -->
-                <section class="contact-section" id="contact">
-                    
-                </section>
-            </main>
+            </section>
+        </main>
 
-                <!-- -------------------------- FOOTER ------------------------------- -->
-                <footer class="footer">
+        <!-- -------------------------- FOOTER ------------------------------- -->
+        <footer class="footer">
 
-                </footer>
-                <!-- ------------------------- SCROLL TOP ------------------------------ -->
+        </footer>
+        <!-- ------------------------- SCROLL TOP ------------------------------ -->
 
-                <!-- ------------------------- SWIPER JS ------------------------------ -->
-                <script src=""></script>
-                <!-- ---------------------------- MAIN JS ------------------------------- -->
-                <script src=""></script>
-</body>
+        <!-- ------------------------- SWIPER JS ------------------------------ -->
+        <script src=""></script>
+        <!-- ---------------------------- MAIN JS ------------------------------- -->
+        <script src="assets/js/main.js"></script>
+    </body>
+
 </html>
