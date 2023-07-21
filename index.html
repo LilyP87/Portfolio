@@ -26,7 +26,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-estate nav__icon"></i>Home
                             </a>
                         </li>
@@ -60,6 +60,9 @@
                 </div>
 
                 <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -88,15 +91,11 @@
                         <div class="home__img">
                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0" mask-type="alpha">
-                                    <path fill="#8A3FFC"
-                                        d="M35.8,-46.9C50.7,-38.4,70.2,-33.8,76.7,-22.8C83.3,-11.8,76.9,5.6,71,22.9C65.2,40.3,59.9,57.7,48.1,70.5C36.4,83.3,18.2,91.5,3.3,86.9C-11.5,82.3,-23,64.9,-33,51.5C-43,38.1,-51.4,28.8,-58.3,16.8C-65.1,4.8,-70.4,-9.9,-67.5,-23C-64.7,-36.1,-53.8,-47.6,-41.2,-56.9C-28.6,-66.1,-14.3,-73.2,-1.9,-70.5C10.4,-67.8,20.8,-55.4,35.8,-46.9Z"
-                                        transform="translate(100 100)" />
+                                    <path fill="#08BDBA" d="M37.6,-55.1C47.9,-44.2,55,-32.2,59.6,-19.1C64.1,-6.1,66.1,8,61.1,18.7C56,29.4,43.9,36.6,32.6,48.3C21.2,60.1,10.6,76.4,1.3,74.6C-8,72.8,-16,52.9,-26.2,40.8C-36.5,28.7,-49.1,24.4,-59.6,14.2C-70.1,4,-78.4,-12.1,-75.5,-25.6C-72.7,-39.2,-58.6,-50.2,-44.1,-59.8C-29.6,-69.4,-14.8,-77.6,-0.6,-76.8C13.6,-76,27.2,-66.1,37.6,-55.1Z" transform="translate(100 100)" />
                                 </mask>
                                 <g mask="url(#mask0)">
-                                    <path fill="#8A3FFC"
-                                        d="M35.8,-46.9C50.7,-38.4,70.2,-33.8,76.7,-22.8C83.3,-11.8,76.9,5.6,71,22.9C65.2,40.3,59.9,57.7,48.1,70.5C36.4,83.3,18.2,91.5,3.3,86.9C-11.5,82.3,-23,64.9,-33,51.5C-43,38.1,-51.4,28.8,-58.3,16.8C-65.1,4.8,-70.4,-9.9,-67.5,-23C-64.7,-36.1,-53.8,-47.6,-41.2,-56.9C-28.6,-66.1,-14.3,-73.2,-1.9,-70.5C10.4,-67.8,20.8,-55.4,35.8,-46.9Z"
-                                        transform="translate(100 100)" />
-                                    <image class="home__blob-img" x="20" y="28"
+                                    <path fill="#08BDBA" d="M37.6,-55.1C47.9,-44.2,55,-32.2,59.6,-19.1C64.1,-6.1,66.1,8,61.1,18.7C56,29.4,43.9,36.6,32.6,48.3C21.2,60.1,10.6,76.4,1.3,74.6C-8,72.8,-16,52.9,-26.2,40.8C-36.5,28.7,-49.1,24.4,-59.6,14.2C-70.1,4,-78.4,-12.1,-75.5,-25.6C-72.7,-39.2,-58.6,-50.2,-44.1,-59.8C-29.6,-69.4,-14.8,-77.6,-0.6,-76.8C13.6,-76,27.2,-66.1,37.6,-55.1Z" transform="translate(100 100)" />
+                                    <image class="home__blob-img" x="15" y="22"
                                         xlink:href="assets/img/Simself_portrait.png">
                                 </g>
                             </svg>
@@ -165,7 +164,7 @@
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">My technical level</span>
 
-                <div class="skills_container container grid">
+                <div class="skills__container container grid">
                     <div>
                         <!-- ---------------- SKILLS 1 -------------------- -->
                         <div class="skills__content skills__open">
@@ -219,6 +218,7 @@
                                             <span class="skills__percentage skills__react"></span>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -669,9 +669,7 @@
                         <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                     </div>
                     <!-- Add Pagination -->
-                    <div class="swiper-pagination">
-
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
@@ -790,16 +788,113 @@
 
             <!-- ---------------------------- CONTACT ME --------------------------- -->
             <section class="contact section" id="contact">
-                
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">06 82 17 80 58</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">apavilla@outlook.fr</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">France</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" name="" id="" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" name="" id="" class="contact__input">
+                            </div>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" name="" id="" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
             </section>
         </main>
 
         <!-- -------------------------- FOOTER ------------------------------- -->
         <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Alexa</h1>
+                        <span class="footer__subtitle">Frontend developper</span>
+                    </div>
 
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Bedimcode. All right reserved</p>
+            </div>
         </footer>
         <!-- ------------------------- SCROLL TOP ------------------------------ -->
-
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
         <!-- ------------------------- SWIPER JS ------------------------------ -->
         <script src="assets/js/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
 
