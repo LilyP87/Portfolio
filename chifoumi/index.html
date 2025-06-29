@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pierre Feuille Ciseaux</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Pierre - Feuille - Ciseaux</h1>
+
+      <div class="scoreboard">
+        <p>
+          Score 🧍 : <span id="player-score">0</span> | 🤖 :
+          <span id="computer-score">0</span>
+        </p>
+      </div>
+
+      <div class="choices">
+        <img
+          src="images/logo-pierre.png"
+          alt="Pierre"
+          class="choice"
+          data-choice="pierre"
+        />
+        <img
+          src="images/logo-feuille.png"
+          alt="Feuille"
+          class="choice"
+          data-choice="feuille "
+        />
+        <img
+          src="images/logo-ciseaux.png"
+          alt="Ciseaux"
+          class="choice"
+          data-choice="ciseaux"
+        />
+      </div>
+
+      <div class="result">
+        <p id="player-choice">🧍 Choix: -</p>
+        <p id="computer-choice">🤖 Choix: -</p>
+        <p id="outcome">Fais ton choix !</p>
+      </div>
+
+      <button id="reset">Réinitialiser</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
