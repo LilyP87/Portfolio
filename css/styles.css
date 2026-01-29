@@ -624,7 +624,7 @@ td {
 }
 
 .portfolio__content {
-  padding: 0 1.5rem;
+  padding: 2rem 0;
 }
 
 .portfolio__img {
@@ -667,6 +667,7 @@ td {
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
+  margin-top: 1rem;
   bottom: -2.5rem;
 }
 
@@ -970,7 +971,7 @@ td {
   }
 
   .section__subtitle {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .header {
