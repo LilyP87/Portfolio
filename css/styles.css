@@ -764,6 +764,43 @@ td {
   margin-top: 1rem;
 }
 
+/*==================== CONFIRMATION PAGE ====================*/
+.confirmation__title {
+  color: var(--first-color);
+}
+
+.confirmation__title,
+.confirmation__subtitle,
+.confirmation__img-container {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.confirmation__container,
+.confirmation__img-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmation__container {
+  align-items: flex-end;
+}
+
+.confirmation__img {
+  border-radius: 50%;
+  width: 60%;
+  margin: 1.5rem 0;
+}
+
+.button__close {
+  display: inline-block;
+  color: var(--first-color);
+  margin-top: 0.5rem;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h2-font-size);
+}
+
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;
