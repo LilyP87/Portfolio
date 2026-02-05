@@ -691,10 +691,11 @@ td {
   margin-bottom: var(--mb-2);
 }
 
-.contact__infoContent {
+/*.contact__infoContent {
   display: flex;
   justify-content: space-between;
 }
+*/
 
 .contact__icon {
   font-size: 2rem;
