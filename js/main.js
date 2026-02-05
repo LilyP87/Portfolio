@@ -180,8 +180,8 @@ form.addEventListener("submit", async (e) => {
   });
 
   if (response.ok) {
-    window.location.href = "./confirmation.html";
+    window.location.href = "/confirmation.html";
   } else {
-    alert("Une erreur est survenue. Merci de réessayer.");
+    window.location.href = "/error.html";
   }
 });
