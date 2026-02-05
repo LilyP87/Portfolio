@@ -164,24 +164,26 @@ themeButton.addEventListener("click", () => {
 });
 
 /*==================== REDIRECT PAGE CONFIRMATION ====================*/
-const form = document.getElementById("contactForm");
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  if (!form) return;
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-  const data = new FormData(form);
+    const response = await fetch("https://formspree.io/f/xjgebajl", {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    });
 
-  const response = await fetch("https://formspree.io/f/xjgebajl", {
-    method: "POST",
-    body: data,
-    headers: {
-      Accept: "application/json",
-    },
+    if (response.ok) {
+      window.location.href =
+        "https://lilyp87.github.io/Portfolio/confirmation.html";
+    } else {
+      window.location.href = "error.html";
+    }
   });
-
-  if (response.ok) {
-    window.location.href = "/confirmation.html";
-  } else {
-    window.location.href = "/error.html";
-  }
 });
