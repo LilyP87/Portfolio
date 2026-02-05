@@ -824,9 +824,9 @@
              method="POST" 
             class="contact__form grid"
         >
-
+        <input type="hidden" name="_subject" value="Nouveau message depuis le site">
+        <input type="hidden" name="_redirect" value="https://lilyp87.github.io/Portfolio/confirmation.html">
   <div class="contact__inputs grid">
-    <input type="hidden" name="_subject" value="Nouveau message depuis le site">
     <div class="contact__content">
       <label class="contact__label">Nom</label>
       <input type="text" name="nom" class="contact__input" required>
@@ -850,7 +850,6 @@
 
   <div>
     <button type="submit" class="button button--flex ">
-      <!--- <a href="error.html">Envoyer</a> -->
       Envoyer
       <i class="uil uil-message button__icon"></i>
     </button>
